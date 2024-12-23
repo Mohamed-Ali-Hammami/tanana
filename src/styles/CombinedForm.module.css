@@ -1,0 +1,103 @@
+
+/* Form Container */
+.formContainer {
+    margin: 20px;
+    padding: 10px;
+    background: rgb(28, 43, 58);
+    border-radius: 20px;
+    box-shadow: 0 6px 12px #850143;
+    border: 2px solid #ff66b2;
+}
+
+/* Form Title */
+.formContainer h3 {
+    font-size: 26px; /* Slightly larger title */
+    color: #333333; /* Dark text for readability */
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Center the title */
+}
+
+/* Form Label */
+.formLabel {
+    font-size: 14px;
+    color: #bdc3c7;
+    margin-bottom: 5px;
+  }
+
+/* Input Fields */
+.inputField {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgb(28, 43, 58);
+    color: #ecf0f1;
+    transition: all 0.3s ease;
+}
+
+/* Input Focus State */
+.inputField:focus {
+    outline: none;
+    border-color: #1abc9c;
+    box-shadow: 0 0 10px rgba(26, 188, 156, 0.3);
+}
+
+/* Submit Button */
+.submitButton {
+    padding: 12px;
+    background-color: #1abc9c;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;/* Smooth transitions */
+}
+
+/* Button Hover State */
+.submitButton:hover {
+    background-color: #16a085;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.closeButton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.closeButton:hover {
+    color: #4a90e2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .formContainer {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    .formContainer h3 {
+        font-size: 22px; /* Adjust title size for smaller screens */
+    }
+
+    .inputField, .submitButton {
+        font-size: 14px; /* Smaller font size for inputs and buttons */
+    }
+
+    .formLabel {
+        font-size: 14px; /* Adjust label size for smaller screens */
+    }
+
+    .purchasesTable th, .purchasesTable td {
+        font-size: 12px; /* Smaller font size for table cells */
+    }
+}

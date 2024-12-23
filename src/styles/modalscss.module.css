@@ -1,0 +1,221 @@
+.payments-list-container,
+.transactions-list-container {
+  margin: 20px;
+  padding: 10px;
+  background: rgb(28, 43, 58);
+  border-radius: 20px;
+  box-shadow: 0 6px 12px #850143;
+  border: 2px solid #ff66b2;
+}
+
+.payments-list,
+.transactions-list {
+  margin: 20px;
+  padding: 10px;
+  background: rgb(28, 43, 58);
+  border-radius: 20px;
+  box-shadow: 0 6px 12px #850143;
+  border: 2px solid #ff66b2;
+}
+
+.payments-list th,
+.payments-list td,
+.transactions-list th,
+.transactions-list td {
+  padding: 12px;
+  text-align: left;
+}
+
+.payments-list th,
+.transactions-list th {
+  background-color: #1abc9c;
+  border-radius: 20px;
+  color: white;
+}
+
+.payments-list td,
+.transactions-list td {
+  border-radius: 20px;
+  background: rgb(28, 43, 58);
+  color: #ecf0f1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.payments-list td:hover,
+.transactions-list td:hover {
+  background-color: rgba(44, 62, 80, 0.9);
+  transform: translateX(5px);
+}
+
+.status {
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.status-success {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.status-pending {
+  background-color: #f39c12;
+  color: white;
+}
+
+.status-failed {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.crypto-type {
+  padding: 5px;
+  border-radius: 20px;
+  color: white;
+}
+
+.crypto-type-bitcoin {
+  background-color: #f2a900;
+}
+
+.crypto-type-ethereum {
+  background-color: #3c3c3d;
+}
+
+.a {
+  color: #1abc9c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.a:hover {
+  color: #16a085;
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgb(28, 43, 58);
+  border-radius: 20px;
+  box-shadow: 0 6px 12px #850143;
+  border: 2px solid #ff66b2;
+  color: #ecf0f1;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ecf0f1;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 14px;
+  color: #bdc3c7;
+  margin-bottom: 5px;
+}
+
+.input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgb(28, 43, 58);
+  color: #ecf0f1;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #1abc9c;
+  box-shadow: 0 0 10px rgba(26, 188, 156, 0.3);
+}
+
+.submitButton {
+  padding: 12px;
+  background-color: #1abc9c;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.submitButton:hover {
+  background-color: #16a085;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.submitButton:active {
+  background-color: #0f7f6d;
+}
+
+.errorMessage {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.successMessage {
+  color: #2ecc71;
+  font-size: 14px;
+  margin-top: 10px;
+}
+/* Countdown Section */
+.countdownContainer {
+    text-align: center;
+    margin: 2rem 0;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px #850143;
+    border: 2px solid #ff66b2;
+    
+  }
+  .countdownContainer p {
+    color: wheat;
+  } 
+  .countdownTimer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .countdownItem {
+    background: rgba(90, 0, 45, 0.753);
+    border-radius: 20px;
+    min-width: 100px;
+    animation: fadeIn 1s ease-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: wheat;
+  }
+  .countdownItem p {
+    color: wheat;
+    
+  }
+  .countdownItem:hover{
+    
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    
+  }
+  .countdownItem span {
+    font-size: 2.5rem;
+    color: wheat;
+  }

@@ -1,0 +1,345 @@
+
+/* Global Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: fantasy;
+  font-weight: 400;
+}
+/* Button Styles */
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  background-color: rgba(128, 128, 128, 0.342);
+  color: black;
+  font-weight: 450;
+  letter-spacing: 0.05em;
+  border-radius: 20px;
+  border: 2px solid #ff66b2;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: fantasy;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+
+
+}
+
+button:hover {
+  background-color: #16a085;
+transform: translateY(-5px);
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background-color: #f559d3;
+  color: var(--text-light);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Background Effects */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 10% 20%, rgba(255, 102, 178, 0.15) 0%, rgba(0, 51, 102, 0.2) 90%);
+  z-index: -1;
+  animation: pulse 4s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+/* Typography */
+/* Global Typography Styles */
+h1, h2, h3 {
+  text-align: center;
+  transition: color 0.3s ease-in-out;
+  color: wheat; /* Default color for all headers */
+  margin-bottom: 1rem;
+  font-family:fantasy;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.8rem;
+  font-weight: 400;
+
+}
+
+h3 {
+  font-size: 2.3rem;
+  font-weight: 300;
+}
+p {
+  color: #000000;
+  font-weight: 500;
+  font-family: fantasy;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+}
+
+a {
+  font-weight: 500;
+  font-family: fantasy;
+  font-size: 20px;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40vh;
+  overflow: hidden;
+  animation: fadeIn 1s ease-out;
+  background-color: #f559d350;
+  border-radius: 20px;
+  border: 2px solid #f559d3;
+  box-shadow: 0 5px 20px #9e2254;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(50px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.hero-background-image {
+  position: absolute;
+  top: 0;
+  left: 20;
+  width: 80%;
+  height: 100%;
+  background-image: url('/images/export.png');
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  color: wheat;
+  font-weight: 500;
+  font-size: 4rem;
+
+}
+
+
+.hero-description {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+/* Section Containers */
+.story-container,
+.token-details-container,
+.technology-container {
+  text-align: center;
+  width: 100%;
+  background-color: #f559d350;
+  border-radius: 20px;
+  border: 2px solid #f559d3;
+  box-shadow: 0 5px 20px #9e2254;
+  padding: 2rem;
+  margin: 2rem 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hero-container:hover,
+.story-container:hover,
+.token-details-container:hover,
+.technology-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.token-stats-grid {
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 2rem 100px;
+}
+.token-stats-grid p {
+  color: 	wheat;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.stat-card {
+  background: rgba(90, 0, 45, 0.753);
+  padding: 1rem;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: scale(1.05);
+  background-color: rgba(126, 51, 89, 0.788);
+}
+
+
+
+/* General Modal Styles */
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%; /* Adjust as necessary */
+  max-width: 500px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1000;
+  padding: 20px;
+  display: none; /* Initially hidden */
+}
+
+/* Show Modal */
+.modal-container.active {
+  display: block;
+}
+
+/* Close Button */
+.modal-close {
+  position: relative;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.modal-overlay.hidden {
+  display: none;
+}
+
+/* Footer */
+.footer-container {
+  width: 100%;
+  background: var(--glassmorphism-bg);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links a {
+  color: var(--primary-color);
+  margin: 0 0.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--highlight-color);
+}
+
+/* Countdown Section */
+.countdown-container {
+  text-align: center;
+  margin: 2rem 0;
+  background-color: #f559d350;
+  border-radius: 20px;
+  border: 2px solid #f559d3;
+  box-shadow: 0 5px 20px #9e2254;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.countdown-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.countdown-item {
+  background: rgba(90, 0, 45, 0.753);
+  padding: 1rem;
+  border-radius: 20px;
+  min-width: 120px;
+  animation: fadeIn 1s ease-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: wheat;
+}
+.countdown-item p {
+  color: wheat;
+  
+}
+.countdown-item:hover{
+  
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  
+}
+.countdown-item span {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: wheat;
+}
+.cta-description {
+  font-weight: 500;
+  font-size: 2.5rem;
+  text-align: center;
+  transition: color 0.3s ease-in-out;
+  color: wheat; /* Default color for all headers */
+  margin-bottom: 1rem;
+  font-family:fantasy;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .token-stats-grid {
+    grid-template-columns: 1fr; /* Stacks the cards on smaller screens */
+  }
+
+  .hero-title {
+    font-size: 2.5rem;  /* Slightly smaller font for the title */
+  }
+}

@@ -1,0 +1,131 @@
+ 
+  /* Styles for the modal content */
+  .modalContent {
+    background: #facbe6;
+    padding: 2rem;
+    border-radius: 20px;
+    max-width: 500px;
+    max-height: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+    overflow-y: scroll;
+  }
+  
+  /* Purchase container */
+  .purchaseContainer {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  /* Modal title */
+  .modalTitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+  }
+  
+  /* Error message */
+  .errorMessage {
+    color: #ff4d4d;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  /* Info section */
+  .infoSection {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 20px;
+  }
+  
+  .infoText {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #555555;
+  }
+  
+  .infoText span {
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  /* Input section */
+  .inputSection {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .inputLabel {
+    font-size: 1rem;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputField, .selectField {
+    padding: 0.5rem;
+    background-color: #e0dcdcb7;
+    border: 1px solid #fa56ec;
+    border-radius: 20px;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+  }
+  
+  /* Result section */
+  .resultSection {
+    margin-top: 1rem;
+  }
+  
+  .resultLabel {
+
+    font-size: 1rem;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .resultField {
+    border-radius: 20px;
+    padding: 0.5rem;
+    border: 1px solid #fa56ec;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    background-color: #e0dcdcb7;
+    color: #333333;
+  }
+  
+  /* Close button */
+  .closeButton {
+    background-color: #ff4d4d;
+    color: #ffffff;
+    padding: 0.7rem 1.0rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    align-self: center;
+  }
+  
+  .closeButton:hover {
+    background-color: #e60000;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

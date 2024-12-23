@@ -1,0 +1,368 @@
+/* Initial styling of the logo */
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 50%;   
+    object-fit: cover;
+    box-shadow: 0 6px 12px #850143;
+    border: 2px solid #ff66b2;  /* Initial border color */
+    animation: pulse-border 2s infinite cubic-bezier(0.4, 0, 0.2, 1); /* Smoother pulse animation */
+  }
+  
+  /* Keyframes to create the pulsing effect */
+  @keyframes pulse-border {
+    0% {
+      border-width: 2px;  /* Initial border width */
+      border-color: #ff66b2; /* Initial border color */
+    }
+    50% {
+      border-width: 3px;  /* Border expands slightly */
+      border-color: #1abc9c; /* Border color changes to green */
+    }
+    100% {
+      border-width: 2px;  /* Border shrinks back */
+      border-color: #ff66b2; /* Border returns to original color */
+    }
+  }
+.action-button{
+    animation: pulse-border 2s infinite cubic-bezier(0.3, 0, 0.2, 1); /* Smoother pulse animation */
+
+}
+.tab-container{
+    width: 100%;
+    height: 100%;
+}
+.container-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #92929294;  /* Darker background for better contrast */
+    border-radius: 20px;
+    box-shadow: 0 10px 25px #850143;
+    position: relative;
+    overflow: hidden;
+    font-family: fantasy;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px #850143;
+    border: 2px solid #ff66b2;
+}
+.purchase-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(28, 43, 58);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    color: #ecf0f1;
+  }
+
+.close-button-two{
+    position:absolute;
+    margin-right:280px;
+    width: 50px;
+    right: 0;
+}
+.close-button{
+    position: absolute;
+    width: 50px;
+    right: 0;
+
+}
+/* Header Styling */
+.header {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.header h1 {
+    font-size: 2.4rem;
+    font-weight: 500;  /* Increased size for better visibility */
+    color: wheat;
+    font-family: fantasy;
+    letter-spacing: 1px;
+    transition: all 0.2s ease;
+}
+
+.header h1:hover {
+    color: #1abc9c;  /* Updated hover color for a fresh look */
+}
+
+/* Profile Section */
+.profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    animation: fadeIn 1.2s ease-in-out;
+    left: 0%;
+    margin-left: 20px;
+}
+
+.profile-image {
+    width: 120px; /* Slightly larger size for better visibility */
+    height: 120px; /* Slightly larger size */
+    border-radius: 30%;
+    object-fit: cover;
+    margin-right: 15px; /* Adjusted spacing */
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px #850143;
+    border: 2px solid #ff66b2;
+}
+
+.profile-image:hover {
+    transform: scale(1.1);
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgba(128, 128, 128, 0.342);
+    box-shadow: 0 6px 12px #850143;
+    border: 2px solid #ff66b2;
+    padding: 5px;
+    margin: 15px;
+    border-radius: 20px;
+
+}
+.strong{
+    color: black;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+.user-details p {
+    margin: 5px 0;
+    font-size: 1.2rem;  
+    font-weight: 400;
+    letter-spacing: 0.035em;
+    color: wheat;
+
+}
+
+/* Balance Container */
+.balance-container {
+    position: relative;
+    right: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.balance-box {
+    background-color: rgba(128, 128, 128, 0.342);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: large;
+    box-shadow: 0 6px 12px #850143;
+    border: 2px solid #ff66b2;
+}
+.balance-box h3{
+    color: wheat;
+}
+.balance-box p {
+    background-color: rgb(59, 59, 59);
+    border-radius: 20px;
+    
+    color: #16a085;
+}
+.balance-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.toggle-profile-actions-button {
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.342);
+    box-shadow: 0 6px 12px #850143;
+    border: 2px solid #ff66b2;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .toggle-profile-actions-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+  .icon-container {
+    position: relative;
+    width: 24px;  /* Match icon size */
+    height: 24px;
+  }
+  
+  .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .icon.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .icon.hidden {
+    opacity: 0;
+    transform: scale(0);
+  }
+  
+/* Table Styles */
+.transactions-table, .leaderboard-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+}
+
+.transactions-table th, .leaderboard-table th {
+    background-color: #1abc9c;  /* Updated header color */
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.transactions-table td, .leaderboard-table td {
+    background-color: rgba(44, 62, 80, 0.8);
+    padding:  12px;
+    color: #ecf0f1;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.transactions-table td:hover, .leaderboard-table td:hover {
+    background-color: rgba(44, 62, 80, 0.9);
+    transform: translateX(5px);
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    position: relative;
+    animation: slideInUp 0.5s ease-out;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #1abc9c;  /* Updated close button color */
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.modal-close:hover {
+    color: #16a085;  /* Darker hover color */
+}
+
+/* Dashboard button styles */
+.tab {
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.342);
+    box-shadow: 0 6px 12px #850143;
+    border: 2px solid #ff66b2;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Apply darker blue effect on hover */
+.tab:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.profile-buttons-container{
+    display: flex;
+}
+/* Active tab styling */
+.tab.active {
+    background-color: #cc3388; /* darker pink for the active tab */
+}
+.tab-content{
+    position: fixed; /* Or fixed if it should stay centered during scrolling */
+    display: flex;
+    top: 10%;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container-dashboard {
+        width: 95%;
+        margin: 20px auto;
+        padding: 25px;
+    }
+
+    .tabs {
+        flex-direction: column;
+    }
+
+    .tab {
+        padding: 12px;
+    }
+
+    .tab-content {
+        padding: 20px;
+    }
+
+    input, button {
+        padding: 12px;
+    }
+
+    .modal-content {
+        padding: 20px;
+    }
+} 

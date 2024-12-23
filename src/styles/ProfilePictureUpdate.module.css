@@ -1,0 +1,103 @@
+/* ProfilePictureUpload.module.css */
+
+/* Visually hidden class for accessibility */
+.visuallyHidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* Keeps text out of the document flow */
+    border: 0;
+  }
+  
+  /* Container for profile picture upload */
+  .profilePictureUpload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Adds spacing between elements */
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  /* Input field for uploading image */
+  .fileInput {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff4d4f;
+    border-radius: 20px;
+    border: 2px solid #1890ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .fileInput:disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+  }
+  
+  .fileInput:hover:not(:disabled),
+  .fileInput:focus:not(:disabled) {
+    background-color: #ff7875;
+    transform: scale(1.05);
+  }
+  
+  /* Container for the image preview */
+  .imagePreviewContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Styling for the image preview */
+  .imagePreview {
+    border-radius: 50%;
+    border: 2px solid #1890ff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Remove button styling */
+  .removeButton {
+    padding: 8px 16px;
+    background-color: #ff4d4f;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .removeButton:hover,
+  .removeButton:focus {
+    background-color: #ff7875;
+    transform: scale(1.1);
+  }
+  
+  .removeButton:focus {
+    outline: 2px solid #1890ff;
+    outline-offset: 2px;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .profilePictureUpload {
+      max-width: 90%; /* Makes the container more flexible on smaller screens */
+    }
+  
+    .imagePreview {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .removeButton {
+      padding: 6px 12px;
+    }
+  }
+  
